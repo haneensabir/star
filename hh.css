@@ -464,7 +464,7 @@ p{
     box-shadow: 0 6px 20px rgba(51, 185, 203, 0.4); 
 }
 .about{
-    height: 300px;
+     min-height: 300px;
     
 }
 .about h2 {
