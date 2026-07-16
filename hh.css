@@ -480,3 +480,54 @@ p{
     color: #2f2e2e;
     text-align: center;
 }
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 8px 10px;
+    }
+
+    .cards-grid {
+        margin: 0 15px 30px;
+    }
+
+    .testimonial-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pp {
+        height: clamp(180px, 55vw, 320px);
+    }
+
+    .first {
+        left: 5%;
+        max-width: 92%;
+    }
+
+    nav ul li a {
+        font-size: small;
+    }
+
+    .kk {
+        padding: 8px 14px;
+    }
+
+    .k {
+        padding: 10px 26px;
+        font-size: 0.85rem;
+    }
+
+    .about {
+        padding: 15px 15px 30px;
+    }
+
+    .about h2 {
+        margin: 25px 0 15px;
+    }
+}
