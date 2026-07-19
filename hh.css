@@ -20,9 +20,9 @@ nav{
      /* background: rgba(171, 170, 170, 0.2); */
     font-weight: bolder;
      /* backdrop-filter: blur(10px); */
-     height: 70px;
+     min-height: 70px;
 
-    
+    flex-wrap: wrap;
 }
 
 .ll{
@@ -353,51 +353,52 @@ p{
     }
 }
 
-
 .section-title {
     font-size: 28px;
     color: #333;
     margin: 40px;
-       text-align: center;
-
+    text-align: center;
 }
-
+ 
 .cards-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
     gap: 25px;
     margin-bottom: 50px;
 }
-
+ 
 .card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
     background: #fff;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
     transition: 0.3s;
 }
-
+ 
 .card:hover {
     transform: translateY(-10px);
 }
-
+ 
 .card-img img {
     width: 100%;
     height: 160px;
     object-fit: cover;
 }
-
+ 
 .card-content {
     padding: 20px;
 }
-
+ 
 .card-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
-
+ 
 .tag {
     background: #e8f8f0;
     color: #27ae60;
@@ -406,12 +407,13 @@ p{
     font-size: 0.75rem;
     font-weight: bold;
 }
-
+ 
 .card-title {
     font-size: 1.25rem;
     margin-bottom: 10px;
+    color: inherit;
 }
-
+ 
 .card-info {
     display: flex;
     gap: 15px;
@@ -419,54 +421,51 @@ p{
     color: #666;
     margin-bottom: 15px;
 }
-
+ 
 .card-footer {
     border-top: 1px solid #eee;
     padding-top: 15px;
 }
-
+ 
 .old-price {
     text-decoration: line-through;
     color: #999;
     margin-right: 10px;
 }
-
+ 
 .new-price {
     font-weight: 800;
     color: #27ae60;
     font-size: 1.1rem;
 }
-
+ 
 .btn-container {
     text-align: center;
     width: 100%;
-    margin-top: 40px;    
-    margin-bottom: 20px; 
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
-
+ 
 .k {
     display: inline-block;
     text-decoration: none;
     background-color: #33b9cb;
     color: white;
-    padding: 12px 35px;         
-    border-radius: 30px;        
+    padding: 12px 35px;
+    border-radius: 30px;
     font-size: 0.95rem;
     font-weight: 600;
-    text-transform: capitalize;  
+    text-transform: capitalize;
     border: none;
-    transition: all 0.3s ease; 
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 .k:hover {
     background-color: #2ba0b0;
-    transform: translateY(-3px); 
-    box-shadow: 0 6px 20px rgba(51, 185, 203, 0.4); 
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(51, 185, 203, 0.4);
 }
-.about{
-     min-height: 300px;
-    
-}
+ 
 .about h2 {
 
     font-size: 28px;
@@ -487,9 +486,9 @@ p{
     }
 
     nav ul li {
-        padding: 8px 10px;
+        padding: 5px 5px;
     }
-
+    
     .cards-grid {
         margin: 0 15px 30px;
     }
@@ -509,11 +508,17 @@ p{
         left: 5%;
         max-width: 92%;
     }
-
+   .logo{
+    padding: 0px;
+    font-size: x-large;
+   }
     nav ul li a {
         font-size: small;
     }
-
+     .ll{
+        padding: 5px;
+         font-size: small;
+    }
     .kk {
         padding: 8px 14px;
     }
@@ -530,4 +535,10 @@ p{
     .about h2 {
         margin: 25px 0 15px;
     }
+    .auth-buttons {
+       order: 3;
+       width: 100%;
+       justify-content: center;
+       margin: 5px 0;
+   }
 }
