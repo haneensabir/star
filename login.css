@@ -140,3 +140,50 @@ nav ul li a:hover{
 .ll:hover{
    background-color: #a7f0f9;
 }
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr); /* عرض كرتين بجانب بعض */
+    }
+}
+@media (min-width: 1025px) {
+    .cards-grid {
+        grid-template-columns: repeat(4, 1fr); /* عرض 4 كروت بجانب بعض */
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    nav ul li a{
+        font-size: small;
+    }
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 0;
+    }
+    nav ul {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav ul li {
+        padding: 5px 5px;
+    }
+    
+   
+}
