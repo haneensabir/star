@@ -247,3 +247,10 @@ footer {
         padding: 5px;
          font-size: small;
     }
+      .auth-buttons {
+       order: 3;
+       width: 100%;
+       justify-content: center;
+       margin: 5px 0;
+   }
+}
